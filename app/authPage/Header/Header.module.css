@@ -1,0 +1,15 @@
+.header {
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.content_part {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}

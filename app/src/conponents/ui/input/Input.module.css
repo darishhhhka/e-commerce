@@ -1,0 +1,37 @@
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search_container {
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  display: flex;
+  padding-left: 10px;
+  max-width: 184px;
+}
+
+.label {
+  color: #3c4242;
+}
+
+.input {
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.normal {
+  height: 58px;
+  border: 1px #3c4242 solid;
+}
+
+.search {
+  height: 46px;
+  outline: none;
+  color: #807d7e;
+}
+
+.logo {
+  order: -1;
+}

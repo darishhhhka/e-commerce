@@ -1,0 +1,17 @@
+.button {
+  min-width: 140px;
+  height: 46px;
+  border-radius: 8px;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+.outline {
+  color: #8a33fd;
+  border: 1px solid #3c4242;
+}
+
+.fullfill {
+  background-color: #8a33fd;
+  color: white;
+}
