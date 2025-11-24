@@ -1,0 +1,11 @@
+.input {
+  accent-color: #3c4242;
+  height: 18px;
+  width: 18px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

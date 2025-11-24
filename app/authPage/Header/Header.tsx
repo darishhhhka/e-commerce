@@ -15,8 +15,8 @@ export default function Header() {
         </div>
         <div className={style.content_part}>
           <Select />
-          <Button type="fullfill" text="Login" />
-          <Button type="outline" text="Sing up" />
+          <Button variant="fullfill" text="Login" />
+          <Button variant="outline" text="Sing up" />
         </div>
       </div>
       <Line />

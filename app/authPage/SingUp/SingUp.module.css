@@ -1,0 +1,24 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-family: var(--font-core-sans);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
