@@ -6,6 +6,10 @@
   cursor: pointer;
   font-family: var(--font-causten);
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .outline {

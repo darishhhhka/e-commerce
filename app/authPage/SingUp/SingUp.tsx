@@ -1,9 +1,9 @@
-import Button from "@/app/src/conponents/ui/button/Button";
+import Button from "../../src/components/ui/button/Button";
 import Text from "../Text/Text";
 import Title from "../Title/Title";
-import Input from "@/app/src/conponents/ui/input/Input";
+import Input from "../../src/components/ui/input/Input";
 import style from "./SingUp.module.css";
-import Checkbox from "@/app/src/conponents/ui/checkbox/Checkbox";
+import Checkbox from "../../src/components/ui/checkbox/Checkbox";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -61,8 +61,14 @@ export default function SingUp() {
         <Text>Sign up for free to access to in any of our products </Text>
       </div>
       <div className={style.buttons}>
-        <Button variant="outline" text="Continue With Google" />
-        <Button variant="outline" text="Continue With Twitter" />
+        <Button variant="outline">
+          <img src="/icons/Google.svg" alt="google logo" />
+          Continue With Google
+        </Button>
+        <Button variant="outline">
+          <img src="/icons/twitter.svg" alt="twitter logo" />
+          Continue With Twitter
+        </Button>
       </div>
       <form
         className={style.form}
@@ -124,7 +130,7 @@ export default function SingUp() {
         />
 
         <div>
-          <Button variant="fullfill" text="Sing Up" />
+          <Button variant="fullfill">Sing Up</Button>
           <Text>Already have an account? Log in</Text>
         </div>
       </form>

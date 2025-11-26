@@ -1,14 +1,15 @@
+.create_password {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .info {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.reset_password {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
 .form {
   display: flex;
   flex-direction: column;

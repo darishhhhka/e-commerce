@@ -1,10 +1,33 @@
 import Text from "../Text/Text";
 import Title from "../Title/Title";
-import Button from "../../src/conponents/ui/button/Button";
-import Input from "../../src/conponents/ui/input/Input";
+import Button from "../../src/components/ui/button/Button";
+import Input from "../../src/components/ui/input/Input";
 import style from "./ResetPassword.module.css";
+import { Controller, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 export default function ResetPassword() {
+  const shema = yup.object().shape({
+    email: yup.string().trim().email().required("this field is required"),
+  });
+  const {
+    control,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(shema),
+    defaultValues: {
+      email: "",
+    },
+  });
+
+  const submitForm = (data: { email: string }) => {
+    console.log(data);
+    reset();
+  };
+
   return (
     <div className={style.reset_password}>
       <div className={style.info}>
@@ -14,10 +37,22 @@ export default function ResetPassword() {
         </Text>
         <Text>Please check it.</Text>
       </div>
-      <Input label="Email" />
-      <div>
-        <Button type="submit" text="Send" variant="fullfill" />
-      </div>
+      <form
+        onSubmit={handleSubmit(submitForm)}
+        action=""
+        className={style.form}
+      >
+        <Controller
+          name="email"
+          control={control}
+          render={({ field }) => (
+            <Input label="Email" error={errors.email?.message} {...field} />
+          )}
+        />
+        <div>
+          <Button variant="fullfill">Send</Button>
+        </div>
+      </form>
     </div>
   );
 }

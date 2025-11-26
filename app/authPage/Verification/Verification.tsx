@@ -1,5 +1,5 @@
-import Button from "@/app/src/conponents/ui/button/Button";
-import Input from "@/app/src/conponents/ui/input/Input";
+import Button from "../../src/components/ui/button/Button";
+import Input from "../../src/components/ui/input/Input";
 import style from "./Verification.module.css";
 import Title from "../Title/Title";
 import Text from "../Text/Text";
@@ -59,7 +59,7 @@ export default function Verification() {
         />
 
         <div className={style.button}>
-          <Button type="submit" text="Verify Code" variant="fullfill" />
+          <Button variant="fullfill">Verify Code</Button>
         </div>
       </form>
     </div>

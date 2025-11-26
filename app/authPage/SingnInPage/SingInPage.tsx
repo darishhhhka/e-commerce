@@ -4,9 +4,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, Controller } from "react-hook-form";
 import { shema } from "./shema";
 import style from "./SingInPage.module.css";
-import Input from "@/app/src/conponents/ui/input/Input";
-import Button from "@/app/src/conponents/ui/button/Button";
-import Line from "@/app/src/conponents/ui/line/Line";
+import Input from "../../src/components/ui/input/Input";
+import Button from "../../src/components/ui/button/Button";
+import Line from "../../src/components/ui/line/Line";
 import Title from "../Title/Title";
 import Text from "../Text/Text";
 
@@ -37,8 +37,14 @@ export default function SignIn() {
     <div className={style.signin}>
       <Title>Sign In Page</Title>
       <div className={style.buttons}>
-        <Button variant="outline" text="Continue With Google" />
-        <Button variant="outline" text="Continue With Twitter" />
+        <Button variant="outline">
+          <img src="/icons/Google.svg" alt="google logo" />
+          Continue With Google
+        </Button>
+        <Button variant="outline">
+          <img src="/icons/twitter.svg" alt="twitter logo" />
+          Continue With Twitter
+        </Button>
       </div>
       <div className={style.spacer}>
         <Line />
@@ -74,7 +80,7 @@ export default function SignIn() {
           )}
         />
         <div className={style.btn}>
-          <Button text="Sing in" variant="fullfill" />
+          <Button variant="fullfill">Sing in</Button>
           <Text>Don’t have an account? Sign up </Text>
         </div>
       </form>

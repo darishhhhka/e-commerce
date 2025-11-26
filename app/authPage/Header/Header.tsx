@@ -1,9 +1,9 @@
-import Logo from "@/app/src/conponents/ui/logo/Logo";
+import Logo from "../../src/components/ui/logo/Logo";
 import style from "./Header.module.css";
-import Input from "@/app/src/conponents/ui/input/Input";
-import Button from "@/app/src/conponents/ui/button/Button";
-import Line from "@/app/src/conponents/ui/line/Line";
-import Select from "@/app/src/conponents/ui/select/Select";
+import Input from "../../src/components/ui/input/Input";
+import Button from "../../src/components/ui/button/Button";
+import Line from "../../src/components/ui/line/Line";
+import Select from "../../src/components/ui/select/Select";
 
 export default function Header() {
   return (
@@ -15,8 +15,8 @@ export default function Header() {
         </div>
         <div className={style.content_part}>
           <Select />
-          <Button variant="fullfill" text="Login" />
-          <Button variant="outline" text="Sing up" />
+          <Button variant="fullfill">Login</Button>
+          <Button variant="outline">Sing up</Button>
         </div>
       </div>
       <Line />
