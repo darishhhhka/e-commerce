@@ -1,0 +1,23 @@
+.menu {
+  display: inline-flex;
+}
+
+.link {
+  font-family: var(--font-causten);
+  font-size: 22px;
+  color: #807d7e;
+  text-decoration: none;
+}
+
+.active {
+  color: #3c4242;
+  font-weight: bold;
+}
+
+.small_gap {
+  gap: 12px;
+}
+
+.big_gap {
+  gap: 40px;
+}

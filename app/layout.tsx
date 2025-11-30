@@ -1,4 +1,6 @@
 import "./globals.css";
+import Header from "./components/Header/Header";
+import { ReduxProvider } from "./src/store";
 
 export default function RootLayout({
   children,
@@ -11,8 +13,10 @@ export default function RootLayout({
       // className={coreSans}
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
+
         {/* <div>home page</div> */}
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );

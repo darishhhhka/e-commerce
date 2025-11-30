@@ -11,6 +11,7 @@ import ResetPassword from "./ResetPassword/ResetPassword";
 import SingUp from "./SingUp/SingUp";
 import CheckEmail from "./CheckEmail/CheckEmail";
 import CreateNewPassword from "./CreateNewPassword/CreateNewPasssword";
+import Header from "./Header/Header";
 
 type Props = { image: string; children: React.ReactNode };
 
@@ -26,6 +27,7 @@ export default function AuthPage() {
   ];
   return (
     <div className={style.wrapper}>
+      {/* <Header /> */}
       <div className={style.imageContainer}>
         <img
           alt="auth image"

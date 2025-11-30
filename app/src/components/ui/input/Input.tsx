@@ -5,7 +5,13 @@ import style from "./Input.module.css";
 import searcLogo from "@public/icons/search.svg";
 import hideView from "@public/icons/hideView.svg";
 import ErrorMessage from "../errorMessage/ErrorMessage";
-import { useRef } from "react";
+import { HTMLAttributes, useRef } from "react";
+
+type Props = {
+  typeinput: "search" | undefined;
+  label: string | undefined;
+  error: string | undefined;
+} & React.InputHTMLAttributes<HTMLInputElement>;
 
 export default function Input({ ...props }) {
   const input = useRef<HTMLInputElement | null>(null);
