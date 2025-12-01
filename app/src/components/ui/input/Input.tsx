@@ -4,7 +4,7 @@ import Image from "next/image";
 import style from "./Input.module.css";
 import searcLogo from "@public/icons/search.svg";
 import hideView from "@public/icons/hideView.svg";
-import ErrorMessage from "../errorMessage/ErrorMessage";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import { HTMLAttributes, useRef } from "react";
 
 type Props = {

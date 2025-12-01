@@ -4,10 +4,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, Controller } from "react-hook-form";
 import { shema } from "./shema";
 import style from "./SingInPage.module.css";
-import Input from "../../src/components/ui/input/Input";
-import Button from "../../src/components/ui/button/Button";
-import Line from "../../src/components/ui/line/Line";
-import Title from "../Title/Title";
+import Input from "../../src/components/ui/Input/Input";
+import Button from "../../src/components/ui/Button/Button";
+import Line from "../../src/components/ui/Line/Line";
+import Title from "../../src/components/ui/Title/Title";
 import Text from "../Text/Text";
 
 export interface User {

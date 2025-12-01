@@ -1,4 +1,4 @@
-import Button from "@/app/src/components/ui/button/Button";
+import IconButton from "@/app/src/components/ui/IconButton/IconButton";
 
 export const LINKS = [
   { content: "Shop", href: "/" },
@@ -11,25 +11,25 @@ export const LINKS = [
 export const LINKSBUTTONS = [
   {
     content: (
-      <Button variantSize="small">
+      <IconButton variant="grey">
         <img src="/icons/heart.svg" alt="heart icon" />
-      </Button>
+      </IconButton>
     ),
     href: "/",
   },
   {
     content: (
-      <Button variantSize="small">
+      <IconButton variant="grey">
         <img src="/icons/men.svg" alt="heart icon" />
-      </Button>
+      </IconButton>
     ),
     href: "/",
   },
   {
     content: (
-      <Button variantSize="small">
+      <IconButton variant="grey">
         <img src="/icons/cart.svg" alt="heart icon" />
-      </Button>
+      </IconButton>
     ),
     href: "/",
   },

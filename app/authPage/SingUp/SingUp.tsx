@@ -1,9 +1,9 @@
-import Button from "../../src/components/ui/button/Button";
+import Button from "../../src/components/ui/Button/Button";
 import Text from "../Text/Text";
-import Title from "../Title/Title";
-import Input from "../../src/components/ui/input/Input";
+import Title from "../../src/components/ui/Title/Title";
+import Input from "../../src/components/ui/Input/Input";
 import style from "./SingUp.module.css";
-import Checkbox from "../../src/components/ui/checkbox/Checkbox";
+import Checkbox from "../../src/components/ui/Checkbox/Checkbox";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";

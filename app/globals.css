@@ -22,6 +22,19 @@
 @font-face {
   font-family: "Causten";
   src: url("/fonts/Causten Medium.ttf");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("/fonts/CaustenRegular.ttf");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("/fonts/CaustenBold.ttf");
+  font-weight: bold;
 }
 
 :root {

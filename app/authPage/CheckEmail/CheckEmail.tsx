@@ -1,5 +1,5 @@
 import Text from "../Text/Text";
-import Title from "../Title/Title";
+import Title from "../../src/components/ui/Title/Title";
 import style from "./CheckEmail.module.css";
 
 export default function CheckEmail() {

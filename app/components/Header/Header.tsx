@@ -1,11 +1,11 @@
 "use client";
 
-import Logo from "../../src/components/ui/logo/Logo";
+import Logo from "../../src/components/ui/Logo/Logo";
 import style from "./Header.module.css";
 import Menu from "../Menu/Menu";
-import Input from "@/app/src/components/ui/input/Input";
-import Button from "@/app/src/components/ui/button/Button";
-import { LINKS, LINKSBUTTONS } from "../Menu/links";
+import Input from "@/app/src/components/ui/Input/Input";
+import Button from "@/app/src/components/ui/Button/Button";
+import { LINKS, LINKSBUTTONS } from "./links";
 
 export default function Header() {
   return (

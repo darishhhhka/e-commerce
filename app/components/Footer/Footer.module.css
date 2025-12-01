@@ -1,0 +1,64 @@
+.footer {
+  background-color: #3c4242;
+  padding: 60px 100px;
+  font-family: var(--font-causten);
+  width: 100%;
+}
+
+.footer_wrapper {
+  padding: 30px 70px;
+}
+
+.lists {
+  display: flex;
+  gap: 80px;
+}
+
+.arrow {
+  stroke: #f6f6f6;
+  width: 17px;
+  height: 8px;
+}
+
+.popular_categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 76px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.second_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.download_card {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_footer {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}

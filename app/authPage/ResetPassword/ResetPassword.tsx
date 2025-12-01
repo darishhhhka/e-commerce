@@ -1,7 +1,7 @@
 import Text from "../Text/Text";
-import Title from "../Title/Title";
-import Button from "../../src/components/ui/button/Button";
-import Input from "../../src/components/ui/input/Input";
+import Title from "../../src/components/ui/Title/Title";
+import Button from "../../src/components/ui/Button/Button";
+import Input from "../../src/components/ui/Input/Input";
 import style from "./ResetPassword.module.css";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

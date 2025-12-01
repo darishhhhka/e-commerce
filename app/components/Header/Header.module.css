@@ -3,6 +3,7 @@
   align-items: center;
   gap: 76px;
   padding: 20px 100px;
+  justify-content: space-between;
   /* height: ; */
 }
 

@@ -1,11 +1,11 @@
-import Input from "../../src/components/ui/input/Input";
+import Input from "../../src/components/ui/Input/Input";
 import Text from "../Text/Text";
-import Title from "../Title/Title";
+import Title from "../../src/components/ui/Title/Title";
 import style from "./CreateNewPasssword.module.css";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Button from "../../src/components/ui/button/Button";
+import Button from "../../src/components/ui/Button/Button";
 
 export default function CreateNewPassword() {
   const shema = yup.object().shape({

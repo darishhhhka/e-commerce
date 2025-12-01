@@ -1,6 +1,6 @@
 import Text from "@/app/authPage/Text/Text";
 import style from "./Checkbox.module.css";
-import ErrorMessage from "../errorMessage/ErrorMessage";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 type Props = {
   children: React.ReactNode;

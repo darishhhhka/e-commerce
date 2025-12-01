@@ -1,9 +1,9 @@
-import Logo from "../../src/components/ui/logo/Logo";
+import Logo from "../../src/components/ui/Logo/Logo";
 import style from "./Header.module.css";
-import Input from "../../src/components/ui/input/Input";
-import Button from "../../src/components/ui/button/Button";
-import Line from "../../src/components/ui/line/Line";
-import Select from "../../src/components/ui/select/Select";
+import Input from "../../src/components/ui/Input/Input";
+import Button from "../../src/components/ui/Button/Button";
+import Line from "../../src/components/ui/Line/Line";
+import Select from "../../src/components/ui/Select/Select";
 
 export default function Header() {
   return (
