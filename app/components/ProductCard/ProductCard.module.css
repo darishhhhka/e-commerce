@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: fit-content;
+  font-family: var(--font-causten);
+  position: relative;
+}
+
+.image {
+  max-width: 270px;
+  max-height: 393px;
+  border-radius: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2a2f2f;
+}
+
+.brand {
+  color: #7f7f7f;
+  font-size: 13px;
+  font-weight: medium;
+}
+
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  padding: 10px 16px;
+  font-weight: bold;
+  color: #3c4242;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.like {
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.like_img {
+  background-color: inherit;
+}

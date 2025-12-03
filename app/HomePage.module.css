@@ -1,4 +1,11 @@
 .container {
-  width: 300px;
-  color: green;
+  max-width: 1240px;
+  margin: 0 100px;
+  padding: 100px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
