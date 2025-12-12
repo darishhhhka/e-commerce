@@ -1,3 +1,4 @@
+import Image from "@/app/src/components/ui/Image/Image";
 import style from "./ProductCard.module.css";
 
 export interface Card {
@@ -42,7 +43,13 @@ export default function ProductCard({
         </div>
       )}
       <div className={style.imge}>
-        <img src={card.image} alt="card image" />
+        <Image
+          url={card.image}
+          alt="card image"
+          width={270}
+          height={393}
+          borderRadius={10}
+        />
       </div>
       <div className={style.card_footer}>
         <div className={style.info}>

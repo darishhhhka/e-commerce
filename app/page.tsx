@@ -1,15 +1,30 @@
 "use client";
 
-import { Provider } from "react-redux";
+import { Provider, useDispatch } from "react-redux";
 import { createStore } from "@reduxjs/toolkit";
 import { rootReducer } from "./src/store/rootReducer";
 import ProductCard from "./components/ProductCard/ProductCard";
 import { LIMELIGHT, MENCATEGORIES, WOMENCATEGORIES } from "./products";
 import style from "./HomePage.module.css";
 import ListCard from "./components/ListCard/ListCard";
+import { useEffect } from "react";
+import { fetchHome } from "./src/store/homeSlice";
+import { useAppDispatch } from "./src/store/store";
 
 export default function Home() {
   const store = createStore(rootReducer);
+
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchHome);
+  }, []);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/")
+  //     .then((data) => data.json())
+  //     .then((data) => console.log(data));
+  // }, []);
 
   return (
     <Provider store={store}>
